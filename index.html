@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gabancu.com - Berita Seputar Kota</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+            color: #222;
+        }
+
+        /* Top Utility Bar khas detik */
+        .top-bar {
+            background-color: #006605;
+            color: #fff;
+            font-size: 0.75rem;
+            padding: 6px 20px;
+            display: flex;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Main Header */
+        header {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            border-bottom: 4px solid #006605;
+        }
+
+        /* Ruang Placeholder untuk Custom Logo Anda */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            margin-right: 30px;
+        }
+
+        .logo-placeholder {
+            width: 110px;
+            height: 35px;
+            background-color: #00468c;
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Menu Navigasi Horizontal Biru */
+        nav {
+            background-color: #006605;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            list-style: none;
+            overflow-x: auto;
+        }
+
+        .nav-container li a {
+            display: block;
+            padding: 12px 18px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+
+        .nav-container li a:hover, .nav-container li.active a {
+            background-color: #1a9c20;
+        }
+
+        /* Layout Konten Utama */
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        /* Kolom Berita Kiri */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        /* Headline Utama */
+        .headline {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .headline img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+
+        .headline h1 {
+            font-size: 1.8rem;
+            color: #054d87;
+            line-height: 1.3;
+            margin-bottom: 8px;
+        }
+
+        .headline h1 a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .headline h1 a:hover {
+            color: #00468c;
+        }
+
+        .headline p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Daftar Berita Mengalir (Feed) */
+        .news-feed {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .news-item {
+            display: flex;
+            gap: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .news-item img {
+            width: 180px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .news-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .news-details h2 {
+            font-size: 1.15rem;
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+
+        .news-details h2 a {
+            text-decoration: none;
+            color: #03d3fd;
+        }
+
+        .news-details h2 a:hover {
+            color: #e30613;
+        }
+
+        .news-time {
+            font-size: 0.75rem;
+            color: #999;
+        }
+
+ 
+        /* Responsif Mobile */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .news-item {
+                flex-direction: row;
+            }
+            .news-item img {
+                width: 120px;
+                height: 80px;
+            }
+            .headline h1 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Utility Bar Khas Portal Berita -->
+    <div class="top-bar">
+        <div>Jumat, 10 Juli 2026</div>
+        <div>Gabancu Network ▼</div>
+    </div>
+
+    <!-- Header Utama -->
+    <header>
+        <div class="logo-container">
+            <!-- Ganti isi div ini atau ganti dengan tag <img> saat Anda kustomisasi logo -->
+            <img src="minecraft_title.png" alt="Logo Detik Simpel" style="height: 35px; width: auto;">
+        </div>
+    </header>
+
+    <!-- Navigasi Utama -->
+    <nav>
+        <ul class="nav-container">
+            <li class="active"><a href="#">Gabancu city upnews</a></li>
+            <li><a href="#">HotNews</a></li>
+            <li><a href="#">Sepakbola</a></li>
+            <li><a href="#">HealthNews</a></li>
+        </ul>
+    </nav>
+
+    <!-- Konten Grid -->
+    <div class="container">
+        <!-- Kolom Berita Utama & Aliran Berita -->
+        <main class="main-content">
+            
+            <!-- Headline Khas detik -->
+            <div class="headline">
+                <a href="#"><img src="WhatsApp Image 2026-07-10 at 10.17.22.jpeg" alt="Headline"></a>
+                <h1><a href="#">Berstandar FIFA, Gubernur MIA Harap Pembangunan Stadion Gelora Samudra International Stadium (GSIS) Bisa Bantu Majukan Prestasi Sepak Bola.</a></h1>
+                <br><p>Gubernur provinsi antartika utara, dr. Mukhammad Ikhtibarul Amri, S.biomed melakukan kunjungan ke Stadion Gelora Samudra International Stadum (GSIS), kota Gabancu pada Jum'at (10/07/2026) guna meninjau progres pembangunan Stadion yang berkapasitas 200.000 penonton.</p></br>
+                
+                <br><p>Soroti sistem suara yang digunakan dalam operasional Stadion. "Stadion tersebut menggunakan speaker dari merek terkenal yang sedang berkolaborasi, d&b dan Neuralink. Kita menggunakan seri MSJ-X9-NEURAL yang terdapat di setiap sudut stadion. Dengan menggunakan seri tersebut, suara yang dihasilkan akan menjadi lebih dramatis dengan adanya teknologi yang menggunakan fisika quantum yang dapat meredam gema hingga menyentuh 99.999%", ujar dr. Mukhammad Ikhtibarul Amri, S.biomed.</p></br>
+
+                <br><p>dr. Mukhammad Ikhtibarul Amri, S.Biomed juga menjelaskan, stadion ini juga difasilitasi oleh fasilitas yang ramah penyandang disabilitas. Terdapat chip yang ditanam di bola saat pertandingan yang bertujuan untuk menjadi tracker untuk para penyandang disabilitas agar seolah olah merasakan menonton pertandingan.</p></br>
+
+                <br><p>dr. Mukhammad Ikhtibarul Amri, S.Biomed menegaskan, proyek ini ditujukan untuk para pemain sepak bola, pelatih, dan managemen agar terus sukses dan dapat meningkatkan kemampuan dan prestasi sepak bola nasional. Rawat dan pelihara dengan baik fasilitas yang ada sehinnga dapat meminimalkan nilai perbaikan saat terdapat fasilitas yang rusak.</p>
+            </div>
